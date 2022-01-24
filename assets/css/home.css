@@ -1,0 +1,108 @@
+body{
+    background-color: aqua;
+    font-family:sans-serif;
+}
+.flex input{
+    display: inline-block;
+}
+.heading{
+    /* display: inline-block; */
+    background-color: rgb(8, 88, 26);
+    align-self: center;
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    color: rgb(131, 124, 67);
+}
+.input{
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+}
+.upper-form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    background-color: burlywood;
+}
+.second{
+    display: flex;
+    flex-direction: row;
+}
+.second .input{
+    width: 50%;
+}
+.add-button{
+    width: 20%;
+    background-color: brown;
+    align-self: center;
+    margin-bottom: 3px;
+}
+.lower-form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    background-color: rgb(116, 104, 90);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-right: -20px;
+    background-color: honeydew;
+    margin-right: 10px;
+    border-bottom: 2px solid red;
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
+.div1{
+    background-color: rgb(219, 91, 91);
+    width: 10%;
+    border-bottom-left-radius: 9px;
+    border-top-left-radius: 9px;
+}
+.div1 input{
+    margin: 10%;
+    /* margin-left: 30%; */
+    /* text-align: center; */
+}
+.div2{
+    /* background-color: crimson; */
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px;
+}
+.div2-data{
+    margin: 0px;
+    padding-left: 10px;
+    color: rgb(110, 0, 0);
+}
+.div3{
+    /* background-color: darkblue; */
+    width: 25%;
+    /* height: %; */
+    margin-top: 6px;
+    margin-right: 10px;
+    background-color: rgba(19, 47, 138, 0.774);
+    border-radius: 4px;
+    text-align: center;
+}
+.delete-button{
+    width: 20%;
+    background-color: rgb(194, 3, 3);
+    align-self: center;
+}
+.button{
+    padding: 2px 6px;
+    margin-top: 3px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: lemonchiffon;
+}

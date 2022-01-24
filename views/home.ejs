@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <div class="body">
+        <h1 class="heading">TODO APP</h1>
+            <form class="upper-form" action="/data" method="post">
+                
+                    <input class="task input" type="text" name="task" placeholder="DESCRIPTIONS">
+                    <div class="second">
+                        
+                        <select class="category input" name="catogery" id="catogery">
+                            <option value="one">one</option>
+                            <option value="two">two</option>
+                            <option value="three">three</option>
+                            <option value="four">four</option>
+                          </select>
+
+                          <input class="date input" type="date" name="deadline" placeholder="DEADLINE">
+                    </div>
+                    
+                
+                <button class="add-button button" type="submit"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp; ADD TASK</button>
+                   
+            </form>
+        
+        
+            <form class="lower-form" action="/delete" method="post">
+                <button class="button delete-button" type="submit"><i class="fa fa-trash" aria-hidden="true"></i>&nbsp; DELETE TASKS</button>
+                <ul>
+                    <%for(let i of Details) {%>
+                     <li class="items">
+                         <div class="div1"><input type="checkbox" name='<%=i._id%>' id=""></div>
+                         <div class="div2">
+                            <h3 class="div2-data"><%= i.task%></h3>
+                            <h4 class="div2-data"><%= i.deadline%></h4>
+                         </div>
+                         <h2 class="div3">
+                            <%= i.catogery%>
+                         </h2>
+                     </li>
+                    <%}%>    
+                </ul>
+            </form>
+    </div>
+   
+</body>
+</html>
